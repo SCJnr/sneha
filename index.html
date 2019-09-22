@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>
+        Focus down Nothing here!
+    </title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-family: 'Mansalva', cursive;
+        }
+
+        .logo {
+            float: left;
+            margin-left: 2%;
+        }
+
+        .logo h1 {
+            color: rgb(168, 168, 7);
+        }
+
+        .logo h1:hover {
+            text-decoration: transparent;
+            cursor: crosshair;
+        }
+
+        .nav-items ul {
+            float: right;
+            margin-right: 10%;
+            padding: 0.6%;
+        }
+
+        .nav-items ul li {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .nav-items ul li:hover {
+            color: rgb(168, 168, 7);
+            text-decoration: line-through;
+            cursor: crosshair;
+        }
+
+        .content {
+            position: absolute;
+            top: 26%;
+            left: 10%;
+            width: 44%;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 140%;
+            left: 0%;
+            transform: translate(-20%, -10%);
+        }
+
+        .social-links ul li {
+            display: inline-block;
+            padding-left: 20px;
+        }
+
+        .social-links ul li:hover {
+            color: rgb(168, 168, 7);
+            text-decoration: line-through;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<div class="nav">
+    <div class="logo">
+        <h1 data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="100">Sneha Swati</h1>
+    </div>
+    <div class="nav-items">
+        <ul>
+            <li data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="300"><a href="#"
+                    style="color: rgb(168, 168, 7);text-decoration: none;">HOME</a></li>
+            <li data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="400">BLOG</li>
+            <li data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="500">CONTACT</li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="col-md-6 right-area">
+        <div class="spanning-text" style="color: rgb(168, 168, 7);" data-aos="zoom-in-right" data-aos-easing="ease-in"
+            data-aos-delay="500">
+            <h1>:-)Hi'ya!</h1>
+        </div>
+        <div class="intro-text" data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="500">
+            <h1>I'm <span style="color:rgb(168, 168, 7);">स्नेहा
+                </span> Swati</h1>
+        </div>
+        <div class="about-me" data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="700">
+            <h3>This is Sneha Swati a final year undergrad pursuing my bachelor's and I am located in Kolkata,India.
+            </h3>
+        </div>
+        <div class="buttono" data-aos="zoom-in-right" data-aos-easing="ease-in" data-aos-delay="800">
+            <button style="color:#000;background-color: rgb(168, 168, 7);border: none;padding:3%;"><span
+                    style="font-size: large;font-family: 'Mansalva';font-size:large;"><a
+                        style="color: #000;text-decoration: none;" href="/originalcv.pdf" download>Download
+                        CV</span></a></button>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Google+</li>
+            </ul>
+        </div>
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in" data-aos-delay="1200" data-aos-offset="0"
+            class="hero--right" style="position:absolute;top:5%;left:80%;transform: translate(50%,-22%);">
+            <image src="/hero-right.jpg" style="height:85vh;width:80wh;">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    AOS.init();
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    window.onfocus = function () {
+        document.title = 'Hiya!';
+    }
+    window.onblur = function () {
+        document.title = 'Bitch,Please!';
+    }
+</script>
+
+</html>
